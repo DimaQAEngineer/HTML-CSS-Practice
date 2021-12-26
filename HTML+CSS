@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.grid {
+				background-color: rgb(19, 56, 61);
+				width: 1170px;
+				height: 200px;
+				margin: 30px auto;
+				display: grid;
+				grid-gap: 30px;
+				grid-auto-flow: column;
+				grid-template: 30% 30% / 20% 20% 20% 20% ;
+				justify-content: center;
+				text-align: center;
+			}
+			.num {
+				font-family: cursive ;
+				color: rgb(189, 63, 63);
+				font-size: 300%;
+				font-weight: 600;
+			}
+			.text {
+				font-weight: 450;
+				text-transform: uppercase;
+				color: rgba(255, 255, 255, 0.596);
+			}
+			.num, .text {
+				padding: 30px;
+			}
+			b {
+				margin: 0;
+				padding: 0;
+			}
+			.nh {
+				font-size: 120%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="item num">2<b class="nh">5</b>00</div>
+			<div class="item text">happy clients</div>
+			<div class="item num"><b class="nh">3</b></b>00</div>
+			<div class="item text">full notebooks</div>
+			<div class="item num"><b class="nh"></b>120</div>
+			<div class="item text">teammates</div>
+			<div class="item num"><b class="nh">3</b>0</div>
+			<div class="item text">stores</div>
+	</body>
+	</html>
