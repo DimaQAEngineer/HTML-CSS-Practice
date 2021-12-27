@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<style>
-			* {
+		<link rel="stylesheet" href="font-awesome.min.css">
+	</head>
+	<style>
+	* {
 				margin: 0;
 				padding: 0;
 				box-sizing: border-box;
@@ -13,7 +15,7 @@
 			.grid {
 				margin:70px auto;
 				width: 1170px;
-				background: linear-gradient(90deg, #85b0f2, #00ddcf, #c4f2f8);
+				background: linear-gradient(90deg, #85b0f2, #00ddcf, #9cedf8);
 				display: grid;
 				grid-gap: 40px 10px;
 				grid-template: 250px / 24% 24% 24% 24%;
@@ -48,27 +50,32 @@
 					text-transform: uppercase;
 					font-family: sans-serif;
 				}
-		</style>
-	</head>
+				.fa {
+					font-size: 60px;
+					color: white;
+					float: right;
+				}
+	</style>
 	<body>
 		<div class="grid">
 			<div class="grid1">
-				<div class="item i"><img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-bag-health-vitaliy-gorbachev-flat-vitaly-gorbachev.png"/></div>
+				<div class="item i"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
 				<div class="item text1">548</div>
 				<div class="item text2">project complated</div>
 				</div>
 			<div class="grid1">
-				<div class="item i"><img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-clock-user-interface-flatart-icons-flat-flatarticons.png"/></div>
+				<div class="item i"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
 				<div class="item text1">1465</div>
 				<div class="item text2">worcking hours</div>
 				</div>
 			<div class="grid1">
-				<div class="item i"><img src="https://img.icons8.com/cute-clipart/64/000000/army-star.png"/></div>
+				<div class="item i"><i class="fa fa-star" aria-hidden="true"></i>
+</div>
 				<div class="item text1">612</div>
 				<div class="item text2">positive feedbackes</div>
 				</div>
 			<div class="grid1">
-				<div class="item i"><img src="https://img.icons8.com/external-sketchy-juicy-fish/64/000000/external-favorite-ui-elements-sketchy-sketchy-juicy-fish-2.png"/></div>
+				<div class="item i"><i class="fa fa-heart" aria-hidden="true"></i></div>
 				<div class="item text1">735</div>
 				<div class="item text2">happy clients</div>
 			</div>
