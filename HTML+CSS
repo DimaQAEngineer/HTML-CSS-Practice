@@ -11,49 +11,68 @@
 				box-sizing: border-box;
 			}
 			.grid {
-				background-color: rgb(19, 56, 61);
+				margin:70px auto;
 				width: 1170px;
-				height: 200px;
-				margin: 30px auto;
+				background: linear-gradient(90deg, #85b0f2, #00ddcf, #c4f2f8);
 				display: grid;
-				grid-gap: 30px;
-				grid-auto-flow: column;
-				grid-template: 30% 30% / 20% 20% 20% 20% ;
-				justify-content: center;
+				grid-gap: 40px 10px;
+				grid-template: 250px / 24% 24% 24% 24%;
+				grid-column: space-around;
+			}
+			.grid1 {
+				width: 100%;
+				margin: 50px 10px;
+				display: grid;
+				grid-template: 40% 40%/ 35% 55%;
+				grid-gap: 10px;	
+			}
+			.i {
+				margin-top: 34px;
+				margin-left: 10px;
+				grid-area: 1 / 1 / 3 / 2;
 				text-align: center;
-			}
-			.num {
-				font-family: cursive ;
-				color: rgb(189, 63, 63);
-				font-size: 300%;
-				font-weight: 600;
-			}
-			.text {
-				font-weight: 450;
-				text-transform: uppercase;
-				color: rgba(255, 255, 255, 0.596);
-			}
-			.num, .text {
-				padding: 30px;
-			}
-			b {
-				margin: 0;
-				padding: 0;
-			}
-			.nh {
-				font-size: 120%;
-			}
+				vertical-align: middle;
+				}
+				
+				.text1 {
+					margin-top: 40px;
+					font-weight: 500;
+					font-size: 140%;
+					color: white;
+				}
+				.text2 {
+					margin-bottom: 15px;
+					font-weight: 500;
+					font-size: 80%;
+					color: white;
+					text-transform: uppercase;
+					font-family: sans-serif;
+				}
 		</style>
 	</head>
 	<body>
 		<div class="grid">
-			<div class="item num">2<b class="nh">5</b>00</div>
-			<div class="item text">happy clients</div>
-			<div class="item num"><b class="nh">3</b></b>00</div>
-			<div class="item text">full notebooks</div>
-			<div class="item num"><b class="nh"></b>120</div>
-			<div class="item text">teammates</div>
-			<div class="item num"><b class="nh">3</b>0</div>
-			<div class="item text">stores</div>
+			<div class="grid1">
+				<div class="item i"><img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-bag-health-vitaliy-gorbachev-flat-vitaly-gorbachev.png"/></div>
+				<div class="item text1">548</div>
+				<div class="item text2">project complated</div>
+				</div>
+			<div class="grid1">
+				<div class="item i"><img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-clock-user-interface-flatart-icons-flat-flatarticons.png"/></div>
+				<div class="item text1">1465</div>
+				<div class="item text2">worcking hours</div>
+				</div>
+			<div class="grid1">
+				<div class="item i"><img src="https://img.icons8.com/cute-clipart/64/000000/army-star.png"/></div>
+				<div class="item text1">612</div>
+				<div class="item text2">positive feedbackes</div>
+				</div>
+			<div class="grid1">
+				<div class="item i"><img src="https://img.icons8.com/external-sketchy-juicy-fish/64/000000/external-favorite-ui-elements-sketchy-sketchy-juicy-fish-2.png"/></div>
+				<div class="item text1">735</div>
+				<div class="item text2">happy clients</div>
+			</div>
+			</div>
+		</div>
 	</body>
-	</html>
+</html>
