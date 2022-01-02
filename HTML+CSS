@@ -13,72 +13,69 @@
 				box-sizing: border-box;
 			}
 			.grid {
-				margin:70px auto;
-				width: 1170px;
-				background: linear-gradient(90deg, #85b0f2, #00ddcf, #9cedf8);
+				margin: 50px auto;
 				display: grid;
-				grid-gap: 40px 10px;
-				grid-template: 250px / 24% 24% 24% 24%;
-				grid-column: space-around;
+				width: 900px;
+				height: 350px;
+				grid-gap: 30px;
+				grid-template: 90% / 20% 45% 20%;
 			}
-			.grid1 {
-				width: 100%;
-				margin: 50px 10px;
+			.grid1 > img {
+				margin-left:  30px;
+				float: center;
+			}
+			.grid3{
 				display: grid;
-				grid-template: 40% 40%/ 35% 55%;
-				grid-gap: 10px;	
+				grid-template: 30% 20% / 90%;
+				margin-left: 30px;
 			}
-			.i {
-				margin-top: 34px;
-				margin-left: 10px;
-				grid-area: 1 / 1 / 3 / 2;
-				text-align: center;
-				vertical-align: middle;
-				}
-				
-				.text1 {
-					margin-top: 40px;
-					font-weight: 500;
-					font-size: 140%;
-					color: white;
-				}
-				.text2 {
-					margin-bottom: 15px;
-					font-weight: 500;
-					font-size: 80%;
-					color: white;
-					text-transform: uppercase;
-					font-family: sans-serif;
-				}
-				.fa {
-					font-size: 60px;
-					color: white;
-					float: right;
-				}
+			h1 {
+				margin-top: 10px;
+				font-weight: 400;
+				color: grey;
+				margin-bottom: 20px;
+			}
+			p {
+				color: grey;
+				text-align: justify;
+			}
+			.grid31 > i {
+				color: rgb(1, 184, 56);
+				font-size: 40px;
+			}
+			.grid31 > i:hover {
+				color: rgb(1, 157, 184);
+				font-size: 40px;
+				transition: all 1000ms ease;
+			}
+			#i1 {
+				margin-top: 30px;
+			}
+			#i2{
+				margin-bottom: 60px;
+			}
 	</style>
 	<body>
 		<div class="grid">
 			<div class="grid1">
-				<div class="item i"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-				<div class="item text1">548</div>
-				<div class="item text2">project complated</div>
-				</div>
-			<div class="grid1">
-				<div class="item i"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-				<div class="item text1">1465</div>
-				<div class="item text2">worcking hours</div>
-				</div>
-			<div class="grid1">
-				<div class="item i"><i class="fa fa-star" aria-hidden="true"></i>
-</div>
-				<div class="item text1">612</div>
-				<div class="item text2">positive feedbackes</div>
-				</div>
-			<div class="grid1">
-				<div class="item i"><i class="fa fa-heart" aria-hidden="true"></i></div>
-				<div class="item text1">735</div>
-				<div class="item text2">happy clients</div>
+				<img src="/img1.jpg" alt="imgbloknot" />
 			</div>
+			<div class="grid2">
+				<h1>Lorem ipsum dolor sit amet.</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis
+					autem dolorum magni totam incidunt quae quam delectus ullam deserunt.
+					Similique aperiam suscipit eius eveniet voluptatum maxime
+					necessitatibus dolorem voluptatem.
+				</p>
+			</div>
+			<div class="grid3">
+				<div class="grid31">
+					<i id="i1" class="fa fa-pencil-square" aria-hidden="true"></i>
+				</div>
+				<div class="grid31">
+					<i id="i2" class="fa fa-facebook-square" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
 	</body>
