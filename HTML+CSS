@@ -4,77 +4,118 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="font-awesome.min.css">
+		<link rel="stylesheet" href="font-awesome.min.css" />
 	</head>
-	<style>
-	* {
+		<style>
+					* {
 				margin: 0;
 				padding: 0;
-				box-sizing: border-box;
-			}
-			.grid {
-				margin: 50px auto;
-				display: grid;
-				width: 900px;
-				height: 350px;
-				grid-gap: 30px;
-				grid-template: 90% / 20% 45% 20%;
-			}
-			.grid1 > img {
-				margin-left:  30px;
-				float: center;
-			}
-			.grid3{
-				display: grid;
-				grid-template: 30% 20% / 90%;
-				margin-left: 30px;
-			}
-			h1 {
-				margin-top: 10px;
-				font-weight: 400;
-				color: grey;
-				margin-bottom: 20px;
-			}
-			p {
-				color: grey;
-				text-align: justify;
-			}
-			.grid31 > i {
-				color: rgb(1, 184, 56);
-				font-size: 40px;
-			}
-			.grid31 > i:hover {
-				color: rgb(1, 157, 184);
-				font-size: 40px;
-				transition: all 1000ms ease;
-			}
-			#i1 {
-				margin-top: 30px;
-			}
-			#i2{
-				margin-bottom: 60px;
-			}
-	</style>
+				box-sizing: border-box;}
+				
+				.grid {
+					padding: 100px 0 0 0;
+					width: 1400px;
+					margin: 0 auto;
+					display: grid;
+					grid-template: 30px 62px 12px / 1400px ;
+					justify-items: center;
+					margin-bottom: 80px;
+				}
+				.grid1 {
+					text-align: center;
+					color: #212121;
+					font-size: 30px;
+					font-family: Tahoma;	}
+					.grid2{
+						background-color: #ff8b38;
+						width: 64px;
+						height: 3px;
+					margin-top: 37px;
+					}
+					.grid3 {
+						font-size: 11px;
+						font-family: Tahoma;
+						color: #86878b;
+						
+					}
+					.maingrid {
+						width: 1100px;
+						margin: auto;
+						display: grid;
+						grid-template: 200px / 330px 330px 330px;
+						justify-items: center;
+					}
+					.gridl {
+						margin: 0 auto 0 103px;
+						height: 200px;
+						display: grid;
+						grid-template: 70px 70px 50px / 105px 70px 105px;}
+					.gridl1 {
+						grid-area: 1 / 2 / 2 / 3;
+						border-radius: 35px;
+						padding-top: 15px;
+						border: 2px solid #ff8b38;
+						font-size: 30px;
+						text-align: center;
+						color: #ff8b38;
+					}
+					.gridl2 {
+						grid-area: 2 / 1 / 3 / 4;
+						text-align: center;
+						font-size: 17px;
+						margin-top: 29px;
+						color: #212121;
+						font-family: Tahoma;
+					}
+					.gridl3 {
+						grid-area: 3 / 1 / 4 / 4;
+						font-size: 11px;
+						letter-spacing: 0.3px;
+						line-height: 150%;
+						font-family: Tahoma;
+						color: #86878b;
+						text-align: center;
+					}
+
+		</style>
 	<body>
 		<div class="grid">
-			<div class="grid1">
-				<img src="/img1.jpg" alt="imgbloknot" />
-			</div>
-			<div class="grid2">
-				<h1>Lorem ipsum dolor sit amet.</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis
-					autem dolorum magni totam incidunt quae quam delectus ullam deserunt.
-					Similique aperiam suscipit eius eveniet voluptatum maxime
-					necessitatibus dolorem voluptatem.
-				</p>
-			</div>
-			<div class="grid3">
-				<div class="grid31">
-					<i id="i1" class="fa fa-pencil-square" aria-hidden="true"></i>
+			<p class="grid1">WHY THIS IS AWESOME</p>
+			<div class="grid2"></div>
+			<p class="grid3">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			</p>
+		</div>
+		<div class="maingrid">
+			<div class="gridl">
+				<div class="gridl1">
+					<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
 				</div>
-				<div class="grid31">
-					<i id="i2" class="fa fa-facebook-square" aria-hidden="true"></i>
+				<div class="gridl2">Thoughtful Design</div>
+				<div class="gridl3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+					excepturi delectus laudantium minus magni quaerat quae magnam commodi
+					nihil.
+				</div>
+			</div>
+			<div class="gridl">
+				<div class="gridl1">
+					<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+				</div>
+				<div class="gridl2">Well Crafted</div>
+				<div class="gridl3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+					excepturi delectus laudantium minus magni quaerat quae magnam commodi
+					nihil.
+				</div>
+			</div>
+			<div class="gridl">
+				<div class="gridl1"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+				<div class="gridl2">Easy to Customize</div>
+				<div class="gridl3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+					excepturi delectus laudantium minus magni quaerat quae magnam commodi
+					nihil.
 				</div>
 			</div>
 		</div>
